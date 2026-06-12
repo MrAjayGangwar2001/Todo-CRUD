@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: CRUD
+  datasource:
+    url: jdbc:mysql://localhost:3306/crud
+    username: root
+    password:  root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+jwt:
+  secret: MySuperSecretKeyForJWTTokenGenerationThatIsLongEnough123456
+  expiration: 86400000
+
+# Swagger Config...
+
+springdoc:
+  packagesToScan: com.Assesment.CRUD
+  pathsToMatch: /api/v1/**
+  api-doc:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /index.html
+    operationsSorter: method
+
