@@ -1,0 +1,23 @@
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(7, 77, 77);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #f8f9fa; */
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  padding: 25px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
